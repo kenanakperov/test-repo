@@ -3,6 +3,7 @@ class PhotoApp {
     this.video = document.getElementById("video");
     this.canvas = document.getElementById("canvas");
     this.capturedPhoto = document.getElementById("captured-photo");
+    this.mirrorPhoto = document.getElementById("mirror-photo");
     this.takePhotoBtn = document.getElementById("take-photo-btn");
     this.takeAnotherBtn = document.getElementById("take-another-btn");
     this.cameraSection = document.getElementById("camera-section");
@@ -79,6 +80,8 @@ class PhotoApp {
   displayPhoto(imageData) {
     // Set the captured photo
     this.capturedPhoto.src = imageData;
+    // Set the mirror photo (same image for reflection)
+    this.mirrorPhoto.src = imageData;
 
     // Hide camera section and show photo section
     this.cameraSection.style.display = "none";
