@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💕</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">💕 Always Smile 💕</h1>
+
+      <!-- Camera Section -->
+      <div class="camera-section" id="camera-section">
+        <video id="video" autoplay></video>
+        <button id="take-photo-btn" class="take-photo-btn">
+          📸 Take Photo
+        </button>
+      </div>
+
+      <!-- Photo Display Section -->
+      <div class="photo-section" id="photo-section" style="display: none">
+        <div class="heart-container">
+          <!-- Animated hearts -->
+          <div class="heart heart-1">💕</div>
+          <div class="heart heart-2">💖</div>
+          <div class="heart heart-3">💗</div>
+          <div class="heart heart-4">💝</div>
+          <div class="heart heart-5">💘</div>
+          <div class="heart heart-6">💕</div>
+
+          <!-- Photo in the center -->
+          <div class="photo-frame">
+            <img id="captured-photo" src="" alt="Your Beautiful Photo" />
+            <div class="smile-overlay">😊</div>
+          </div>
+        </div>
+
+        <button id="take-another-btn" class="take-another-btn">
+          📸 Take Another Photo
+        </button>
+      </div>
+
+      <!-- Floating hearts background -->
+      <div class="floating-hearts">
+        <span>💕</span>
+        <span>💖</span>
+        <span>💗</span>
+        <span>💝</span>
+        <span>💘</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>💗</span>
+      </div>
+    </div>
+
+    <canvas id="canvas" style="display: none"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
