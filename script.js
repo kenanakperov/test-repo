@@ -191,3 +191,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Add some extra romantic touches
+// Add some extra romantic touches
+document.addEventListener("DOMContentLoaded", () => {
+  // Add a sweet message
+  const sweetMessage = document.createElement("div");
+  sweetMessage.innerHTML = `
+        <div style="
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid #ff69b4;
+            font-size: 0.9rem;
+            color: #d63384;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            max-width: 200px;
+            text-align: center;
+        ">
+            💝Created by Kenan💝
+        </div>
+    `;
+  document.body.appendChild(sweetMessage);
+});
